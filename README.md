@@ -4,7 +4,7 @@ A collection of Twitter bots for automated posting and engagement.
 
 ## Features
 
-### Multi-Account Bot (bankofcart.js)
+### Multi-Account Bot (replyguy.js)
 - Monitors multiple Twitter accounts and responds to their tweets
 - Posts scheduled tweets with various content types
 - Automatically likes and responds to mentions
@@ -46,7 +46,7 @@ OPENAI_ASSISTANT_ID=your_openai_assistant_id
 
 ### Running the Multi-Account Bot
 ```bash
-node bankofcart.js
+node replyguy.js
 ```
 
 ### Running the Hourly Bot

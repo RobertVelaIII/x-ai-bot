@@ -1,1 +1,1 @@
-run bot with ```node bankofcart.js```
+run bot with ```node replyguy.js```
