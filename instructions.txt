@@ -1,1 +1,0 @@
-run bot with ```node replyguy.js```
