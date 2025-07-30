@@ -134,3 +134,11 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - [OpenAI](https://openai.com/) for their powerful AI models
 - [agent-twitter-client](https://www.npmjs.com/package/agent-twitter-client) for Twitter API integration
 - Review Twitter's terms of service regarding automated posting
+
+
+## Configuring the AI Assistant
+
+Configure the AI assistant to respond to the following commands:
+
+- `tweet`: Polls the AI assistant to post a tweet
+- `tweet goodmorning post`: Polls the AI to post a good morning tweet
