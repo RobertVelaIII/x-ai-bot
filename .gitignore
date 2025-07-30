@@ -51,6 +51,7 @@ coverage
 
 # Fly.io specific
 .dockerignore
+fly.toml
 
 # OS specific files
 .DS_Store
