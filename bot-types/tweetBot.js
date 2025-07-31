@@ -195,7 +195,7 @@ class TweetBot {
             
             // Enter cooldown period
             this.inCooldown = true;
-            console.log(`Entering 30-minute cooldown period`);
+            console.log(`Entering 60-minute cooldown period`);
             
             // Schedule reply checking at a random time between 1-2 minutes after posting
             const randomSeconds = 60 + Math.floor(Math.random() * 60); // Random time between 60-120 seconds
@@ -218,7 +218,7 @@ class TweetBot {
         await this.postTweet();
         
         // Set up the tweet schedule with 2-hour window and 30-minute cooldown
-        console.log("Setting up tweet schedule (2-hour window with 30-minute cooldown)...");
+        console.log("Setting up tweet schedule (2-hour window with 60-minute cooldown)...");
         
         // Start the scheduling loop
         this.schedulingLoop();
@@ -252,14 +252,14 @@ class TweetBot {
     }
     
     async schedulingLoop() {
-        // If we're in cooldown, wait 30 minutes then reset
+        // If we're in cooldown, wait 60 minutes then reset
         if (this.inCooldown) {
-            console.log("In cooldown period. Will reset in 30 minutes.");
+            console.log("In cooldown period. Will reset in 60 minutes.");
             setTimeout(() => {
                 this.inCooldown = false;
                 console.log("Cooldown complete. Starting new 2-hour window.");
                 this.schedulingLoop();
-            }, 30 * 60 * 1000); // 30 minutes
+            }, 60 * 60 * 1000); // 60 minutes
             return;
         }
         
@@ -441,7 +441,7 @@ class TweetBot {
 // Main function to run the bot
 async function main() {
     try {
-        console.log("Starting Twitter bot with 2-hour window and 30-minute cooldown...");
+        console.log("Starting Twitter bot with 2-hour window and 60-minute cooldown...");
         const bot = new TweetBot();
         
         // Initialize the bot
